@@ -1,0 +1,235 @@
+.watch-page {
+  background-color: #000000;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.watch-container {
+  display: flex;
+  gap: 2rem;
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.video-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 12px 0;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 95%;
+  white-space: normal;
+}
+
+.video-info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.channel-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.channel-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.channel-subs {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.subscribe-btn {
+  margin-left: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-btn.subscribed {
+  background-color: #333;
+}
+
+.subscribe-btn:hover {
+  opacity: 0.8;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-buttons button {
+  background: #222;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s;
+}
+
+.action-buttons button:hover {
+  background: #3d3d3d;
+}
+
+.like-btn.active,
+.dislike-btn.active {
+  background: #444;
+  color: #0f9d58;
+}
+
+.sidebar-section {
+  flex: 1;
+  background: #111;
+  border-radius: 8px;
+  max-height: 170vh;
+  overflow-y: auto;
+  border-radius: 15px;
+}
+
+.sidebar-section::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+
+.next-videos-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.recommended-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video-card-skeleton {
+  width: 100%;
+  height: 200px;
+  background: #222;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.into-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.title-cont {
+  flex: 1;
+}
+
+.video-card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222;
+  animation: pulse 1.5s infinite;
+}
+
+.video-card-title {
+  width: 80%;
+  height: 16px;
+  background: #222;
+  border-radius: 4px;
+  margin-top: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.video-card-username {
+  width: 60%;
+  height: 16px;
+  background: #222;
+  border-radius: 4px;
+  margin-top: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.download {
+  cursor: pointer;
+  color: gray;
+  border-radius: 20px;
+  padding: 6px 10px;
+  border: none;
+  background: #383838;
+}
+
+.icon {
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #222;
+  }
+
+  50% {
+    background-color: #2d2d2d;
+  }
+
+  100% {
+    background-color: #222;
+  }
+}
+
+@media (max-width: 900px) {
+  .watch-container {
+    flex-direction: column;
+  }
+
+  .sidebar-section {
+    max-height: none;
+    margin-top: 20px;
+  }
+}
