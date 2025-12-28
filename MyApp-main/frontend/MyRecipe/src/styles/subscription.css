@@ -1,0 +1,27 @@
+.contsub::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+.contsub::-webkit-scrollbar-thumb{
+    border-radius: 0;
+    background: transparent;
+}
+.nav-item {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  background: #333;
+}
+
+.active {
+  background: #333;        /* YouTube sidebar highlight */
+  font-weight: bold;
+}
